@@ -16,6 +16,7 @@ struct student
     int marks;
     float height;
 };//this semi colen is imp at ending 
+// This is new edited by me.
 int main()
 {
     // struct student is data type just like other eg: int 

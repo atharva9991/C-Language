@@ -1,0 +1,42 @@
+#include<stdio.h>
+/*1:The structure is a user-defined data type
+  2:The structure is something similar to an array; the only difference is 
+    array is used to store the same data types.
+  3:struct keyword is used to declare the structure
+*/
+//to creat structure first write struct and any name you want 
+struct student
+{
+    /*inside this stucture you can take any data you want for example:
+        you want to record the student roll number marks and height 
+        you can not use array because it take same data type but stucture can 
+        take any data type you just have to declrae it inside struct
+    */
+    int rollno;
+    int marks;
+    float height;
+};//this semi colen is imp at ending 
+int main()
+{
+    // struct student is data type just like other eg: int 
+    // to take the value just like other data type you haven to type data type and varible name 
+    // in int mae declear : int i1,i2;
+    //same for struct student : struct student s1,s1;
+   struct student s1,s2; 
+   /* to get the value of variable we use dot ( . ) operater 
+        to take rollno of student s1 we use s1.rollno
+   */
+   s1.rollno=3;
+   s1.marks=77;
+   s1.height=5.5;
+   printf("%d\n",s1.rollno);
+   printf("%d\n",s1.marks);
+   printf("%f\n",s1.height);
+   s2.rollno=6;
+   s2.marks=17;
+   s2.height=7.5;
+   printf("%d\n",s2.rollno);
+   printf("%d\n",s2.marks);
+   printf("%f\n",s2.height);
+    return 0;
+}
